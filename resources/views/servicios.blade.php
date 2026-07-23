@@ -17,7 +17,7 @@
 
   <!-- ===== PAGE HEADER ===== -->
   <section style="max-width:1140px;margin:0 auto;padding:clamp(32px,6vw,60px) 16px clamp(16px,3vw,30px);text-align:center">
-    <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#B8922A;font-weight:600">Todo para tu estancia</span>
+    <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Todo para tu estancia</span>
     <h1 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,50px);font-weight:700;margin-top:10px;line-height:1.08;max-width:20ch;margin-left:auto;margin-right:auto;text-wrap:balance">Servicios del Hotel La Finca del Minero</h1>
     <p style="margin-top:12px;font-size:clamp(14px,2vw,17px);color:#6b5d4f;max-width:48ch;margin-left:auto;margin-right:auto;line-height:1.65">Comodidades pensadas para que te sientas como en casa, en el corazón de Zacatecas.</p>
   </section>
@@ -27,28 +27,28 @@
     <div class="grid-icons">
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px 14px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
         <div style="font-size:26px;color:#9B1C1C">⌘</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">WiFi</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:5px;line-height:1.5">Internet de alta velocidad en todo el hotel</p>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">WiFi</h2>
+        <p style="font-size:12px;color:#746553;margin-top:5px;line-height:1.5">Internet de alta velocidad en todo el hotel</p>
       </div>
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px 14px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
         <div style="font-size:26px;color:#9B1C1C">✦</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">Restaurante</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:5px;line-height:1.5">Cocina regional y desayunos caseros</p>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">Restaurante</h2>
+        <p style="font-size:12px;color:#746553;margin-top:5px;line-height:1.5">Cocina regional y desayunos caseros</p>
       </div>
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px 14px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
         <div style="font-size:26px;color:#9B1C1C">⊟</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">Estacionamiento</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:5px;line-height:1.5">Espacio seguro para tu vehículo</p>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">Estacionamiento</h2>
+        <p style="font-size:12px;color:#746553;margin-top:5px;line-height:1.5">Espacio seguro para tu vehículo</p>
       </div>
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px 14px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
         <div style="font-size:26px;color:#9B1C1C">◴</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">Despertador</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:5px;line-height:1.5">Servicio de despertador a tu hora</p>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">Despertador</h2>
+        <p style="font-size:12px;color:#746553;margin-top:5px;line-height:1.5">Servicio de despertador a tu hora</p>
       </div>
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px 14px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
         <div style="font-size:26px;color:#9B1C1C">▦</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">TV con cable</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:5px;line-height:1.5">Canales nacionales e internacionales</p>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">TV con cable</h2>
+        <p style="font-size:12px;color:#746553;margin-top:5px;line-height:1.5">Canales nacionales e internacionales</p>
       </div>
     </div>
   </section>

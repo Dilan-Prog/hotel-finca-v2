@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+@php
+  $prodDomain = rtrim(config('hotel.production_domain'), '/');
+  $prodPath = request()->path() === '/' ? '/' : '/'.request()->path();
+  $canonicalUrl = $prodDomain.$prodPath;
+  $breadcrumbLabels = [
+      'inicio' => 'Inicio',
+      'habitaciones' => 'Habitaciones',
+      'servicios' => 'Servicios',
+      'reservaciones' => 'Reservaciones',
+      'contacto' => 'Contacto',
+  ];
+  $currentRoute = Route::currentRouteName();
+@endphp
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>@yield('title', 'Hotel La Finca del Minero')</title>
+<title>@yield('title', config('hotel.name'))</title>
+<link rel="canonical" href="{{ $canonicalUrl }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ config('hotel.name') }}">
+<meta property="og:title" content="@yield('title', config('hotel.name'))">
+<meta property="og:url" content="{{ $canonicalUrl }}">
+<script type="application/ld+json">{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'Hotel',
+    'name' => config('hotel.name'),
+    'url' => $prodDomain.'/',
+    'telephone' => config('hotel.phone_e164'),
+    'address' => [
+        '@type' => 'PostalAddress',
+        'streetAddress' => config('hotel.address.street'),
+        'addressLocality' => config('hotel.address.locality'),
+        'addressRegion' => config('hotel.address.region'),
+        'postalCode' => config('hotel.address.postal_code'),
+        'addressCountry' => config('hotel.address.country'),
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+<script type="application/ld+json">{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => array_values(array_filter([
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Inicio', 'item' => $prodDomain.'/'],
+        $currentRoute !== 'inicio' ? [
+            '@type' => 'ListItem',
+            'position' => 2,
+            'name' => $breadcrumbLabels[$currentRoute] ?? ucfirst((string) $currentRoute),
+            'item' => $canonicalUrl,
+        ] : null,
+    ])),
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 @yield('head')
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Inter',sans-serif;color:#2C1A0E;background:#FAF6F0;-webkit-font-smoothing:antialiased}
-  a{text-decoration:none;color:inherit}
-  input,select,textarea{font-family:inherit}
-  @keyframes fmFade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-  ::selection{background:#9B1C1C;color:#fff}
-  /* ── NAV ── */
-  .desk-nav{display:none;align-items:center;gap:4px;flex-wrap:wrap}
-  @media(min-width:700px){.desk-nav{display:flex}}
-  .mob-btn{display:flex;align-items:center;justify-content:center}
-  @media(min-width:700px){.mob-btn{display:none}}
-  /* ── FOOTER ── */
-  .grid-footer{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
-  @media(min-width:600px){.grid-footer{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}}
-  /* ── CTA ROW ── */
-  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center}
-  @media(max-width:599px){.cta-row{flex-direction:column;align-items:stretch}}
-  @media(max-width:599px){.cta-row a{text-align:center}}
-</style>
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 @yield('styles')
 </head>
 <body>
@@ -39,8 +66,8 @@
       <a href="{{ route('inicio') }}" style="display:flex;flex-direction:column;line-height:1">
         <span style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(15px,4vw,21px);letter-spacing:.3px;color:#2C1A0E">Hotel La Finca del Minero</span>
         <span style="display:flex;align-items:center;gap:6px;margin-top:4px">
-          <span style="color:#B8922A;font-size:11px;letter-spacing:3px">★★★★</span>
-          <span style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#9a8a78;font-weight:500">Zacatecas · Centro Histórico</span>
+          <span style="color:#7d6318;font-size:11px;letter-spacing:3px">★★★★</span>
+          <span style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#746553;font-weight:500">Zacatecas · Centro Histórico</span>
         </span>
       </a>
       <nav class="desk-nav">
@@ -93,16 +120,5 @@
   </footer>
 
 </div>
-
-<script>
-  const burger = document.getElementById('burger-btn');
-  const mobileNav = document.getElementById('mobile-nav');
-  const burgerIcon = document.getElementById('burger-icon');
-  burger.addEventListener('click', () => {
-    const open = mobileNav.style.display === 'flex';
-    mobileNav.style.display = open ? 'none' : 'flex';
-    burgerIcon.textContent = open ? '☰' : '✕';
-  });
-</script>
 </body>
 </html>

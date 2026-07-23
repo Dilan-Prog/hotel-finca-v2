@@ -54,19 +54,19 @@
     <div style="background:#fff;border-radius:5px;box-shadow:0 18px 50px rgba(44,26,14,.16);border:1px solid rgba(44,26,14,.06);padding:20px">
       <div class="grid-booking">
         <label style="display:flex;flex-direction:column;gap:7px">
-          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Llegada</span>
+          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Llegada</span>
           <input type="date" style="border:none;border-bottom:1.5px solid #e3d9cc;padding:8px 2px;font-family:inherit;font-size:15px;color:#2C1A0E;background:transparent;outline:none">
         </label>
         <label style="display:flex;flex-direction:column;gap:7px">
-          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Salida</span>
+          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Salida</span>
           <input type="date" style="border:none;border-bottom:1.5px solid #e3d9cc;padding:8px 2px;font-family:inherit;font-size:15px;color:#2C1A0E;background:transparent;outline:none">
         </label>
         <label style="display:flex;flex-direction:column;gap:7px">
-          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Adultos</span>
+          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Adultos</span>
           <select style="border:none;border-bottom:1.5px solid #e3d9cc;padding:8px 2px;font-family:inherit;font-size:15px;color:#2C1A0E;background:transparent;outline:none"><option>1</option><option selected>2</option><option>3</option><option>4</option></select>
         </label>
         <label style="display:flex;flex-direction:column;gap:7px">
-          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Niños</span>
+          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Niños</span>
           <select style="border:none;border-bottom:1.5px solid #e3d9cc;padding:8px 2px;font-family:inherit;font-size:15px;color:#2C1A0E;background:transparent;outline:none"><option selected>0</option><option>1</option><option>2</option><option>3</option></select>
         </label>
         <a href="{{ route('reservaciones') }}" class="booking-cta" style="text-align:center;padding:14px 22px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.28)">Reservar</a>
@@ -78,18 +78,18 @@
   <section style="max-width:1140px;margin:0 auto;padding:clamp(40px,6vw,60px) 16px 30px">
     <div class="strip-3">
       <div style="text-align:center;padding:0 12px">
-        <div style="font-size:24px;color:#B8922A">✦</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:19px;margin-top:10px;font-weight:600">Mejor precio directo</h3>
+        <div style="font-size:24px;color:#7d6318">✦</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:19px;margin-top:10px;font-weight:600">Mejor precio directo</h2>
         <p style="margin-top:8px;font-size:14px;line-height:1.6;color:#6b5d4f">Reserva con nosotros y paga menos que en cualquier otra plataforma.</p>
       </div>
       <div class="col-border" style="text-align:center;padding:0 12px">
-        <div style="font-size:24px;color:#B8922A">✦</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:19px;margin-top:10px;font-weight:600">Ubicación en el centro</h3>
+        <div style="font-size:24px;color:#7d6318">✦</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:19px;margin-top:10px;font-weight:600">Ubicación en el centro</h2>
         <p style="margin-top:8px;font-size:14px;line-height:1.6;color:#6b5d4f">En pleno corazón histórico, a pasos de los principales atractivos.</p>
       </div>
       <div style="text-align:center;padding:0 12px">
-        <div style="font-size:24px;color:#B8922A">✦</div>
-        <h3 style="font-family:'Playfair Display',serif;font-size:19px;margin-top:10px;font-weight:600">Atención personalizada</h3>
+        <div style="font-size:24px;color:#7d6318">✦</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:19px;margin-top:10px;font-weight:600">Atención personalizada</h2>
         <p style="margin-top:8px;font-size:14px;line-height:1.6;color:#6b5d4f">Te recibimos como en casa, con el trato cálido de siempre.</p>
       </div>
     </div>
@@ -99,7 +99,7 @@
   <section style="max-width:1240px;margin:0 auto;padding:clamp(36px,5vw,54px) 16px">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:14px;margin-bottom:28px">
       <div>
-        <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#B8922A;font-weight:600">Hospedaje</span>
+        <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Hospedaje</span>
         <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,40px);font-weight:700;margin-top:8px">Nuestras habitaciones</h2>
       </div>
       <a href="{{ route('habitaciones') }}" style="font-size:14px;font-weight:600;color:#9B1C1C;border-bottom:1.5px solid #9B1C1C;padding-bottom:3px">Ver todas →</a>
@@ -111,7 +111,7 @@
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Estándar</h3>
           <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Cómoda y luminosa, ideal para una o dos personas.</p>
           <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
-            <span style="font-size:13px;color:#9a8a78">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">890</strong> MXN</span>
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">890</strong> MXN</span>
             <a href="{{ route('habitaciones') }}" style="font-size:13px;font-weight:600;color:#9B1C1C">Ver habitación →</a>
           </div>
         </div>
@@ -122,7 +122,7 @@
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Doble</h3>
           <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Espacio amplio con dos camas, perfecta para familias.</p>
           <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
-            <span style="font-size:13px;color:#9a8a78">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">1,090</strong> MXN</span>
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">1,090</strong> MXN</span>
             <a href="{{ route('habitaciones') }}" style="font-size:13px;font-weight:600;color:#9B1C1C">Ver habitación →</a>
           </div>
         </div>
@@ -133,7 +133,7 @@
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Suite Colonial</h3>
           <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Nuestra mejor estancia, con detalles de época y sala.</p>
           <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
-            <span style="font-size:13px;color:#9a8a78">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">1,650</strong> MXN</span>
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">1,650</strong> MXN</span>
             <a href="{{ route('habitaciones') }}" style="font-size:13px;font-weight:600;color:#9B1C1C">Ver habitación →</a>
           </div>
         </div>
@@ -165,7 +165,7 @@
   <!-- ===== NEARBY ATTRACTIONS ===== -->
   <section style="max-width:1240px;margin:0 auto;padding:clamp(44px,7vw,70px) 16px clamp(36px,5vw,50px)">
     <div style="text-align:center;margin-bottom:28px">
-      <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#B8922A;font-weight:600">El destino</span>
+      <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">El destino</span>
       <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,40px);font-weight:700;margin-top:8px">A unos pasos de todo</h2>
       <p style="margin-top:10px;font-size:clamp(13px,1.8vw,16px);color:#6b5d4f;max-width:52ch;margin-left:auto;margin-right:auto;line-height:1.6">Zacatecas, Patrimonio de la Humanidad, te rodea desde la puerta del hotel.</p>
     </div>
@@ -199,12 +199,12 @@
           <div style="flex:1;background:#FAF6F0;border:2px solid #9B1C1C;border-radius:5px;padding:22px;text-align:center;position:relative">
             <span style="position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#9B1C1C;color:#fff;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;padding:4px 12px;border-radius:20px">Directo</span>
             <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#9B1C1C;margin-top:8px">890</div>
-            <div style="font-size:11px;color:#9a8a78;letter-spacing:1px">MXN / noche</div>
+            <div style="font-size:11px;color:#746553;letter-spacing:1px">MXN / noche</div>
           </div>
           <div style="flex:1;background:#FAF6F0;border:1px solid #e3d9cc;border-radius:5px;padding:22px;text-align:center;opacity:.85">
-            <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Otros sitios</span>
-            <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#9a8a78;margin-top:8px;text-decoration:line-through;text-decoration-color:rgba(155,28,28,.4)">1,023</div>
-            <div style="font-size:11px;color:#9a8a78;letter-spacing:1px">MXN / noche</div>
+            <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Otros sitios</span>
+            <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#746553;margin-top:8px;text-decoration:line-through;text-decoration-color:rgba(155,28,28,.4)">1,023</div>
+            <div style="font-size:11px;color:#746553;letter-spacing:1px">MXN / noche</div>
           </div>
         </div>
       </div>

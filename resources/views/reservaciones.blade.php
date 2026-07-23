@@ -38,13 +38,13 @@
         <div style="flex:1;min-width:140px;background:#FAF6F0;border:2px solid #9B1C1C;border-radius:6px;padding:22px;text-align:center;position:relative">
           <span style="position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#9B1C1C;color:#fff;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;padding:4px 12px;border-radius:20px;white-space:nowrap">Reservando directo</span>
           <div style="font-family:'Playfair Display',serif;font-size:clamp(34px,8vw,44px);font-weight:700;color:#9B1C1C;margin-top:8px">890</div>
-          <div style="font-size:11px;color:#9a8a78;letter-spacing:1px">MXN / noche</div>
+          <div style="font-size:11px;color:#746553;letter-spacing:1px">MXN / noche</div>
         </div>
-        <div style="font-size:22px;color:#B8922A;font-weight:300;align-self:center">vs</div>
+        <div style="font-size:22px;color:#7d6318;font-weight:300;align-self:center">vs</div>
         <div style="flex:1;min-width:140px;background:#FAF6F0;border:1px solid #e3d9cc;border-radius:6px;padding:22px;text-align:center;opacity:.85">
-          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">En otros sitios</span>
-          <div style="font-family:'Playfair Display',serif;font-size:clamp(34px,8vw,44px);font-weight:700;color:#9a8a78;margin-top:8px;text-decoration:line-through;text-decoration-color:rgba(155,28,28,.4)">1,023</div>
-          <div style="font-size:11px;color:#9a8a78;letter-spacing:1px">MXN / noche</div>
+          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">En otros sitios</span>
+          <div style="font-family:'Playfair Display',serif;font-size:clamp(34px,8vw,44px);font-weight:700;color:#746553;margin-top:8px;text-decoration:line-through;text-decoration-color:rgba(155,28,28,.4)">1,023</div>
+          <div style="font-size:11px;color:#746553;letter-spacing:1px">MXN / noche</div>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
   <section style="max-width:760px;margin:0 auto;padding:clamp(28px,5vw,40px) 16px 16px">
     <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:7px;box-shadow:0 10px 36px rgba(44,26,14,.1);padding:clamp(20px,4vw,36px)">
       <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,26px);font-weight:600">Completa tu reservación</h2>
-      <p style="font-size:13px;color:#9a8a78;margin-top:5px">Te enviaremos la confirmación de inmediato.</p>
+      <p style="font-size:13px;color:#746553;margin-top:5px">Te enviaremos la confirmación de inmediato.</p>
 
       <form method="POST" action="{{ route('reservaciones.enviar') }}">
         @csrf
@@ -83,19 +83,19 @@
   <section style="max-width:760px;margin:0 auto;padding:16px 16px clamp(44px,8vw,70px)">
     <div class="grid-trust">
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;text-align:center;box-shadow:0 6px 18px rgba(44,26,14,.05)">
-        <div style="font-size:20px;color:#B8922A">✓</div>
+        <div style="font-size:20px;color:#7d6318">✓</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600;margin-top:8px">Sin cargos extra</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:4px">El precio que ves es el que pagas.</p>
+        <p style="font-size:12px;color:#746553;margin-top:4px">El precio que ves es el que pagas.</p>
       </div>
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;text-align:center;box-shadow:0 6px 18px rgba(44,26,14,.05)">
-        <div style="font-size:20px;color:#B8922A">✓</div>
+        <div style="font-size:20px;color:#7d6318">✓</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600;margin-top:8px">Confirmación inmediata</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:4px">Recibe tu confirmación al instante.</p>
+        <p style="font-size:12px;color:#746553;margin-top:4px">Recibe tu confirmación al instante.</p>
       </div>
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;text-align:center;box-shadow:0 6px 18px rgba(44,26,14,.05)">
-        <div style="font-size:20px;color:#B8922A">✓</div>
+        <div style="font-size:20px;color:#7d6318">✓</div>
         <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600;margin-top:8px">Mejor precio garantizado</h3>
-        <p style="font-size:12px;color:#9a8a78;margin-top:4px">Siempre al mejor precio, directo.</p>
+        <p style="font-size:12px;color:#746553;margin-top:4px">Siempre al mejor precio, directo.</p>
       </div>
     </div>
   </section>

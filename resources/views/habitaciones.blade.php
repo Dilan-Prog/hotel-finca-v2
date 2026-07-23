@@ -51,7 +51,7 @@
             <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px">Baño privado</li>
           </ul>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:20px">
-            <span style="font-size:13px;color:#9a8a78">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">890</strong> MXN / noche</span>
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">890</strong> MXN / noche</span>
             <a href="{{ route('reservaciones') }}" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
           </div>
         </div>
@@ -70,7 +70,7 @@
             <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px">Estacionamiento</li>
           </ul>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:20px">
-            <span style="font-size:13px;color:#9a8a78">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">1,090</strong> MXN / noche</span>
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">1,090</strong> MXN / noche</span>
             <a href="{{ route('reservaciones') }}" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
           </div>
         </div>
@@ -89,7 +89,7 @@
             <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px">Vista a la ciudad</li>
           </ul>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:20px">
-            <span style="font-size:13px;color:#9a8a78">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">1,650</strong> MXN / noche</span>
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">1,650</strong> MXN / noche</span>
             <a href="{{ route('reservaciones') }}" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
           </div>
         </div>
@@ -100,30 +100,30 @@
     <!-- booking sidebar -->
     <aside class="booking-sidebar">
       <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Reserva tu estancia</h3>
-      <p style="font-size:13px;color:#9a8a78;margin-top:5px">Consulta disponibilidad en segundos.</p>
+      <p style="font-size:13px;color:#746553;margin-top:5px">Consulta disponibilidad en segundos.</p>
       <div style="display:flex;flex-direction:column;gap:14px;margin-top:18px">
         <label style="display:flex;flex-direction:column;gap:6px">
-          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Llegada</span>
+          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Llegada</span>
           <input type="date" style="border:1px solid #e3d9cc;border-radius:3px;padding:11px;font-family:inherit;font-size:14px;color:#2C1A0E;outline:none">
         </label>
         <label style="display:flex;flex-direction:column;gap:6px">
-          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Salida</span>
+          <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Salida</span>
           <input type="date" style="border:1px solid #e3d9cc;border-radius:3px;padding:11px;font-family:inherit;font-size:14px;color:#2C1A0E;outline:none">
         </label>
         <div style="display:flex;gap:10px">
           <label style="display:flex;flex-direction:column;gap:6px;flex:1">
-            <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Adultos</span>
+            <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Adultos</span>
             <select style="border:1px solid #e3d9cc;border-radius:3px;padding:11px;font-family:inherit;font-size:14px;outline:none"><option>1</option><option selected>2</option><option>3</option><option>4</option></select>
           </label>
           <label style="display:flex;flex-direction:column;gap:6px;flex:1">
-            <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#9a8a78;font-weight:600">Niños</span>
+            <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Niños</span>
             <select style="border:1px solid #e3d9cc;border-radius:3px;padding:11px;font-family:inherit;font-size:14px;outline:none"><option selected>0</option><option>1</option><option>2</option></select>
           </label>
         </div>
         <a href="{{ route('reservaciones') }}" style="text-align:center;padding:14px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.28)">Reservar</a>
       </div>
       <div style="margin-top:16px;padding-top:14px;border-top:1px solid #f0e8dc;display:flex;align-items:center;gap:9px">
-        <span style="color:#B8922A;font-size:15px">✓</span>
+        <span style="color:#7d6318;font-size:15px">✓</span>
         <span style="font-size:12px;color:#6b5d4f;line-height:1.4">Mejor precio garantizado al reservar directo</span>
       </div>
     </aside>
