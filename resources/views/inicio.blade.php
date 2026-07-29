@@ -1,6 +1,12 @@
 @extends('layouts.finca')
 
-@section('title', 'Inicio — Hotel La Finca del Minero')
+@section('title', 'Hotel Zacatecas | Centro Histórico – Finca del Minero')
+
+@section('head')
+<meta name="description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
+<meta property="og:description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1800&q=80">
+@endsection
 
 @section('styles')
 <style>
@@ -40,10 +46,10 @@
   <section style="position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(180deg,rgba(20,11,5,.28),rgba(20,11,5,.82)),url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1800&q=80') center/cover;background-color:#2C1A0E">
     <div style="position:relative;max-width:1240px;margin:0 auto;width:100%;padding:clamp(40px,8vw,64px) 16px clamp(48px,8vw,72px);animation:fmFade .9s ease both">
       <span style="display:inline-block;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;color:#E2C16A;font-weight:600;margin-bottom:16px">Hotel boutique · 4 estrellas</span>
-      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(34px,7vw,76px);line-height:1.02;max-width:14ch;text-wrap:balance">Tu hogar en el corazón de Zacatecas</h1>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(30px,6vw,66px);line-height:1.08;max-width:18ch;text-wrap:balance">Hotel en Zacatecas — Hotel La Finca del Minero en el Centro Histórico</h1>
       <p style="margin-top:18px;max-width:44ch;font-size:clamp(15px,2vw,19px);line-height:1.65;color:rgba(255,255,255,.82);font-weight:300">Una hacienda colonial restaurada a pasos de los callejones, museos y el teleférico.</p>
       <div class="hero-btns">
-        <a href="{{ route('reservaciones') }}" style="padding:16px 32px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 6px 22px rgba(155,28,28,.4)">Reservar ahora</a>
+        <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="padding:16px 32px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 6px 22px rgba(155,28,28,.4)">Reservar ahora</a>
         <a href="{{ route('habitaciones') }}" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.45);color:#fff;font-size:16px;font-weight:500;border-radius:3px">Ver habitaciones</a>
       </div>
     </div>
@@ -69,9 +75,16 @@
           <span style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Niños</span>
           <select style="border:none;border-bottom:1.5px solid #e3d9cc;padding:8px 2px;font-family:inherit;font-size:15px;color:#2C1A0E;background:transparent;outline:none"><option selected>0</option><option>1</option><option>2</option><option>3</option></select>
         </label>
-        <a href="{{ route('reservaciones') }}" class="booking-cta" style="text-align:center;padding:14px 22px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.28)">Reservar</a>
+        <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" class="booking-cta" style="text-align:center;padding:14px 22px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.28)">Reservar</a>
       </div>
     </div>
+  </section>
+
+  <!-- ===== BIENVENIDA ===== -->
+  <section style="max-width:820px;margin:0 auto;padding:clamp(40px,6vw,60px) 16px 10px;text-align:center">
+    <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Bienvenido</span>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,36px);font-weight:700;margin-top:10px;line-height:1.15">Hotel Centro de Zacatecas</h2>
+    <p style="margin-top:14px;font-size:clamp(14px,2vw,17px);color:#6b5d4f;line-height:1.7">Hotel La Finca del Minero es una hacienda colonial restaurada en pleno Centro Histórico de Zacatecas, a pasos de la Catedral Basílica y del recorrido de la Feria Nacional. Vive la ciudad desde su corazón, sin depender del coche para llegar a lo que quieres conocer.</p>
   </section>
 
   <!-- ===== 3-COLUMN STRIP ===== -->
@@ -106,7 +119,9 @@
     </div>
     <div class="grid-rooms">
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
-        <div style="height:clamp(180px,45vw,210px);background:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&q=80') center/cover"></div>
+        <div style="height:clamp(180px,45vw,210px);overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&q=80" width="900" height="600" alt="Habitación Estándar en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
         <div style="padding:20px">
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Estándar</h3>
           <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Cómoda y luminosa, ideal para una o dos personas.</p>
@@ -117,7 +132,9 @@
         </div>
       </article>
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
-        <div style="height:clamp(180px,45vw,210px);background:url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80') center/cover"></div>
+        <div style="height:clamp(180px,45vw,210px);overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80" width="900" height="600" alt="Habitación Doble en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
         <div style="padding:20px">
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Doble</h3>
           <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Espacio amplio con dos camas, perfecta para familias.</p>
@@ -128,7 +145,9 @@
         </div>
       </article>
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
-        <div style="height:clamp(180px,45vw,210px);background:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80') center/cover"></div>
+        <div style="height:clamp(180px,45vw,210px);overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" width="900" height="600" alt="Suite Colonial en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
         <div style="padding:20px">
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Suite Colonial</h3>
           <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Nuestra mejor estancia, con detalles de época y sala.</p>
@@ -138,6 +157,36 @@
           </div>
         </div>
       </article>
+    </div>
+  </section>
+
+  <!-- ===== AMENIDADES ===== -->
+  <section style="max-width:1140px;margin:0 auto;padding:0 16px clamp(36px,5vw,54px)">
+    <div style="text-align:center;margin-bottom:28px">
+      <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Todo incluido</span>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,40px);font-weight:700;margin-top:8px">Amenidades del hotel</h2>
+    </div>
+    <div class="grid-attr">
+      <a href="{{ route('servicios') }}" style="display:block;background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
+        <div style="font-size:24px;color:#9B1C1C">✦</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Restaurante</h3>
+        <p style="font-size:13px;color:#746553;margin-top:5px;line-height:1.5">Cocina regional en el corazón del hotel</p>
+      </a>
+      <a href="{{ route('servicios') }}" style="display:block;background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
+        <div style="font-size:24px;color:#9B1C1C">◇</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Desayuno</h3>
+        <p style="font-size:13px;color:#746553;margin-top:5px;line-height:1.5">Desayunos caseros preparados cada mañana</p>
+      </a>
+      <a href="{{ route('estacionamiento') }}" style="display:block;background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
+        <div style="font-size:24px;color:#9B1C1C">⊟</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Estacionamiento</h3>
+        <p style="font-size:13px;color:#746553;margin-top:5px;line-height:1.5">Gratuito y vigilado, dentro del hotel</p>
+      </a>
+      <a href="{{ route('servicios') }}" style="display:block;background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
+        <div style="font-size:24px;color:#9B1C1C">▦</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Salón de eventos</h3>
+        <p style="font-size:13px;color:#746553;margin-top:5px;line-height:1.5">Salón El César, capacidad para 200 personas</p>
+      </a>
     </div>
   </section>
 
@@ -170,17 +219,25 @@
       <p style="margin-top:10px;font-size:clamp(13px,1.8vw,16px);color:#6b5d4f;max-width:52ch;margin-left:auto;margin-right:auto;line-height:1.6">Zacatecas, Patrimonio de la Humanidad, te rodea desde la puerta del hotel.</p>
     </div>
     <div class="grid-attr">
-      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76)),url('https://commons.wikimedia.org/wiki/Special:FilePath/La%20bufa%20de%20Zacatecas%20de%20noche.JPG?width=1100') center/cover">
-        <div style="padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Cerro de la Bufa</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Miradores y teleférico</p></div>
+      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/La%20bufa%20de%20Zacatecas%20de%20noche.JPG?width=1100" width="1280" height="714" alt="Cerro de la Bufa iluminado de noche, Zacatecas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76))"></div>
+        <div style="position:relative;padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Cerro de la Bufa</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Miradores y teleférico</p></div>
       </a>
-      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Mina_el_Eden.jpg?width=1100') center/cover">
-        <div style="padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Mina El Edén</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Recorrido en las entrañas</p></div>
+      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mina_el_Eden.jpg?width=1100" width="1280" height="1707" alt="Entrada a la Mina El Edén, Zacatecas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76))"></div>
+        <div style="position:relative;padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Mina El Edén</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Recorrido en las entrañas</p></div>
       </a>
-      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Acueducto%20Zacatecas%20desde%20Teleferico.JPG?width=1100') center/cover">
-        <div style="padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Teleférico</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Vistas únicas de la ciudad</p></div>
+      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Acueducto%20Zacatecas%20desde%20Teleferico.JPG?width=1100" width="1280" height="960" alt="Vista del acueducto de Zacatecas desde el teleférico" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76))"></div>
+        <div style="position:relative;padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Teleférico</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Vistas únicas de la ciudad</p></div>
       </a>
-      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Callej%C3%B3n%20de%20San%20Agust%C3%ADn%2C%20Zacatecas%2C%20Zacatecas.JPG?width=1100') center/cover">
-        <div style="padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Museos</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Rafael Coronel, Pedro Coronel y más</p></div>
+      <a href="{{ route('contacto') }}" style="position:relative;height:clamp(160px,42vw,280px);border-radius:5px;overflow:hidden;display:flex;align-items:flex-end">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Callej%C3%B3n%20de%20San%20Agust%C3%ADn%2C%20Zacatecas%2C%20Zacatecas.JPG?width=1100" width="1280" height="853" alt="Callejón de San Agustín, cerca de los museos de Zacatecas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(20,11,5,.1),rgba(20,11,5,.76))"></div>
+        <div style="position:relative;padding:16px;color:#fff"><h3 style="font-family:'Playfair Display',serif;font-size:clamp(17px,4vw,22px);font-weight:600">Museos</h3><p style="font-size:12px;color:rgba(255,255,255,.75);margin-top:3px">Rafael Coronel, Pedro Coronel y más</p></div>
       </a>
     </div>
   </section>
@@ -192,8 +249,8 @@
         <div>
           <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#9B1C1C;font-weight:700">Reserva directo</span>
           <h2 style="font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,40px);font-weight:700;margin-top:10px;line-height:1.1">Reserva directo y ahorra</h2>
-          <p style="margin-top:10px;font-size:clamp(13px,1.8vw,16px);line-height:1.6;color:#6b5d4f">El mismo cuarto, mejor precio. Sin intermediarios, sin cargos extra.</p>
-          <a href="{{ route('reservaciones') }}" style="display:inline-block;margin-top:20px;padding:14px 32px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 6px 20px rgba(155,28,28,.35)">Reservar ahora</a>
+          <p style="margin-top:10px;font-size:clamp(13px,1.8vw,16px);line-height:1.6;color:#6b5d4f">Los precios de hotel en Zacatecas centro en La Finca del Minero van desde 890 MXN por noche reservando directo. El mismo cuarto, mejor precio. Sin intermediarios, sin cargos extra.</p>
+          <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:20px;padding:14px 32px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 6px 20px rgba(155,28,28,.35)">Reservar ahora</a>
         </div>
         <div class="price-boxes">
           <div style="flex:1;background:#FAF6F0;border:2px solid #9B1C1C;border-radius:5px;padding:22px;text-align:center;position:relative">
@@ -211,11 +268,29 @@
     </div>
   </section>
 
+  <!-- ===== FAQ ===== -->
+  <section style="max-width:800px;margin:0 auto;padding:clamp(10px,2vw,20px) 16px clamp(44px,7vw,64px)">
+    <div style="text-align:center;margin-bottom:28px">
+      <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Preguntas frecuentes</span>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,34px);font-weight:700;margin-top:8px">Dudas antes de reservar</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Cuánto cuesta un hotel en Zacatecas centro?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">En Hotel La Finca del Minero, en pleno Centro Histórico de Zacatecas, las habitaciones van desde 890 MXN por noche reservando directo, hasta 1,650 MXN por la Suite Colonial.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Los hoteles en Zacatecas incluyen desayuno?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Hotel La Finca del Minero cuenta con restaurante propio y desayunos caseros preparados cada mañana para nuestros huéspedes.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== PRE-FOOTER CTA ===== -->
   <section style="background:#2C1A0E;color:#fff;text-align:center;padding:clamp(44px,8vw,70px) 16px">
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,48px);font-weight:700">¿Listo para hospedarte?</h2>
     <p style="margin-top:12px;font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,.7);font-weight:300">Vive Zacatecas desde su corazón. Tu hogar te espera.</p>
-    <a href="{{ route('reservaciones') }}" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
+    <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
   </section>
 
 @endsection

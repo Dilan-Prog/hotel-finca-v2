@@ -2,27 +2,21 @@
 
 @section('title', 'Reservaciones — Hotel La Finca del Minero')
 
+@section('head')
+<meta name="description" content="Reserva tu habitación directo con Hotel La Finca del Minero por WhatsApp. Sin intermediarios, mejor precio garantizado en Zacatecas.">
+<meta property="og:description" content="Reserva tu habitación directo con Hotel La Finca del Minero por WhatsApp. Sin intermediarios, mejor precio garantizado en Zacatecas.">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1800&q=80">
+@endsection
+
 @section('styles')
 <style>
   .price-compare{display:flex;gap:18px;align-items:stretch;flex-wrap:wrap}
-  .form-grid-2{display:grid;grid-template-columns:1fr;gap:16px}
-  @media(min-width:520px){.form-grid-2{grid-template-columns:1fr 1fr}}
-  .form-grid-3{display:grid;grid-template-columns:1fr;gap:16px}
-  @media(min-width:520px){.form-grid-3{grid-template-columns:repeat(3,1fr)}}
   .grid-trust{display:grid;grid-template-columns:1fr;gap:14px}
   @media(min-width:520px){.grid-trust{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}}
 </style>
 @endsection
 
 @section('content')
-
-  @if (session('success'))
-    <div style="max-width:760px;margin:16px auto 0;padding:0 16px">
-      <div style="background:#1d8a4c;color:#fff;border-radius:6px;padding:16px 20px;font-size:14px;font-weight:500">
-        ¡Gracias! Tu solicitud de reservación fue enviada correctamente.
-      </div>
-    </div>
-  @endif
 
   <!-- ===== PAGE HEADER ===== -->
   <section style="background:linear-gradient(180deg,rgba(20,11,5,.55),rgba(20,11,5,.82)),url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1800&q=80') center/cover;background-color:#2C1A0E;color:#fff;padding:clamp(40px,8vw,60px) 16px clamp(44px,8vw,64px);text-align:center">
@@ -50,32 +44,15 @@
     </div>
   </section>
 
-  <!-- ===== BOOKING FORM ===== -->
+  <!-- ===== WHATSAPP CTA ===== -->
   <section style="max-width:760px;margin:0 auto;padding:clamp(28px,5vw,40px) 16px 16px">
-    <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:7px;box-shadow:0 10px 36px rgba(44,26,14,.1);padding:clamp(20px,4vw,36px)">
-      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,26px);font-weight:600">Completa tu reservación</h2>
-      <p style="font-size:13px;color:#746553;margin-top:5px">Te enviaremos la confirmación de inmediato.</p>
-
-      <form method="POST" action="{{ route('reservaciones.enviar') }}">
-        @csrf
-
-        <div class="form-grid-2" style="margin-top:22px">
-          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Llegada</span><input type="date" name="llegada" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Salida</span><input type="date" name="salida" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Adultos</span><select name="adultos" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;outline:none"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label>
-          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Niños</span><select name="ninos" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;outline:none"><option selected>0</option><option>1</option><option>2</option><option>3</option></select></label>
-        </div>
-
-        <label style="display:flex;flex-direction:column;gap:6px;margin-top:16px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Tipo de habitación</span><select name="tipo_habitacion" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;outline:none"><option>Habitación Estándar — desde 890 MXN</option><option>Habitación Doble — desde 1,090 MXN</option><option>Suite Colonial — desde 1,650 MXN</option></select></label>
-
-        <div class="form-grid-3" style="margin-top:16px">
-          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Nombre completo</span><input type="text" name="nombre" placeholder="Tu nombre" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Email</span><input type="email" name="email" placeholder="correo@ejemplo.com" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-          <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Teléfono</span><input type="tel" name="telefono" placeholder="(492) 000 0000" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-        </div>
-
-        <button type="submit" style="width:100%;margin-top:22px;padding:16px;background:#9B1C1C;color:#fff;font-size:17px;font-weight:600;border:none;border-radius:3px;cursor:pointer;box-shadow:0 6px 20px rgba(155,28,28,.35)">Confirmar reservación</button>
-      </form>
+    <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:7px;box-shadow:0 10px 36px rgba(44,26,14,.1);padding:clamp(20px,4vw,36px);text-align:center">
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,26px);font-weight:600">Completa tu reservación por WhatsApp</h2>
+      <p style="font-size:13px;color:#746553;margin-top:5px">Cuéntanos tus fechas y te confirmamos al instante.</p>
+      <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero reservar una habitación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;justify-content:center;width:100%;margin-top:22px;padding:16px;background:#0e7a3d;color:#fff;font-size:17px;font-weight:600;border-radius:3px;box-shadow:0 6px 20px rgba(14,122,61,.35)">
+        <svg viewBox="0 0 448 512" width="20" height="20" fill="#fff" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+        Reservar por WhatsApp
+      </a>
     </div>
   </section>
 

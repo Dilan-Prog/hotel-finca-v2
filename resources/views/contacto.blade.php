@@ -2,26 +2,21 @@
 
 @section('title', 'Contacto — Hotel La Finca del Minero')
 
+@section('head')
+<meta name="description" content="Contacta a Hotel La Finca del Minero en el Centro Histórico de Zacatecas por WhatsApp o teléfono. Resolvemos tus dudas al instante.">
+<meta property="og:description" content="Contacta a Hotel La Finca del Minero en el Centro Histórico de Zacatecas por WhatsApp o teléfono. Resolvemos tus dudas al instante.">
+@endsection
+
 @section('styles')
 <style>
   .grid-phones{display:grid;grid-template-columns:1fr;gap:14px}
   @media(min-width:560px){.grid-phones{grid-template-columns:repeat(2,1fr)}}
   .grid-form-map{display:grid;grid-template-columns:1fr;gap:28px;align-items:start}
   @media(min-width:700px){.grid-form-map{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px}}
-  .form-inner-2{display:grid;grid-template-columns:1fr;gap:14px}
-  @media(min-width:480px){.form-inner-2{grid-template-columns:1fr 1fr}}
 </style>
 @endsection
 
 @section('content')
-
-  @if (session('success'))
-    <div style="max-width:1140px;margin:16px auto 0;padding:0 16px">
-      <div style="background:#1d8a4c;color:#fff;border-radius:6px;padding:16px 20px;font-size:14px;font-weight:500">
-        ¡Gracias por escribirnos! Te responderemos lo antes posible.
-      </div>
-    </div>
-  @endif
 
   <!-- ===== PAGE HEADER ===== -->
   <section style="max-width:1140px;margin:0 auto;padding:clamp(32px,6vw,58px) 16px 14px;text-align:center">
@@ -54,23 +49,14 @@
   <section style="max-width:1140px;margin:0 auto;padding:clamp(16px,3vw,34px) 16px clamp(44px,8vw,70px)">
     <div class="grid-form-map">
 
-      <!-- form -->
-      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:7px;box-shadow:0 10px 36px rgba(44,26,14,.1);padding:clamp(20px,4vw,34px)">
-        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,25px);font-weight:600">Escríbenos</h2>
+      <!-- whatsapp cta -->
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:7px;box-shadow:0 10px 36px rgba(44,26,14,.1);padding:clamp(20px,4vw,34px);text-align:center;display:flex;flex-direction:column;justify-content:center">
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,25px);font-weight:600">Escríbenos por WhatsApp</h2>
         <p style="font-size:13px;color:#746553;margin-top:5px">Te respondemos lo antes posible.</p>
-        <form method="POST" action="{{ route('contacto.enviar') }}">
-          @csrf
-          <div style="display:flex;flex-direction:column;gap:14px;margin-top:20px">
-            <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Nombre</span><input type="text" name="nombre" placeholder="Tu nombre" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-            <div class="form-inner-2">
-              <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Email</span><input type="email" name="email" placeholder="correo@ejemplo.com" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-              <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Teléfono</span><input type="tel" name="telefono" placeholder="(492) 000 0000" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"></label>
-            </div>
-            <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Tipo de consulta</span><select name="tipo_consulta" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none"><option>Reservación</option><option>Evento</option><option>Información</option></select></label>
-            <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6b5d4f;font-weight:600">Mensaje</span><textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" style="border:1px solid #e3d9cc;border-radius:3px;padding:12px;font-size:15px;color:#2C1A0E;outline:none;resize:vertical"></textarea></label>
-            <button type="submit" style="margin-top:4px;padding:15px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border:none;border-radius:3px;cursor:pointer;box-shadow:0 6px 18px rgba(155,28,28,.3)">Enviar</button>
-          </div>
-        </form>
+        <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, tengo una pregunta sobre Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;justify-content:center;margin-top:20px;padding:15px;background:#0e7a3d;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 6px 18px rgba(14,122,61,.3)">
+          <svg viewBox="0 0 448 512" width="18" height="18" fill="#fff" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          Escribir por WhatsApp
+        </a>
       </div>
 
       <!-- map + info -->
@@ -105,7 +91,7 @@
   <section style="background:#2C1A0E;color:#fff;text-align:center;padding:clamp(44px,8vw,70px) 16px">
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,48px);font-weight:700">¿Listo para hospedarte?</h2>
     <p style="margin-top:12px;font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,.7);font-weight:300">Reserva directo y vive Zacatecas desde su corazón.</p>
-    <a href="{{ route('reservaciones') }}" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
+    <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
   </section>
 
 @endsection

@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class FincaController extends Controller
 {
     public function inicio()
@@ -31,13 +29,8 @@ class FincaController extends Controller
         return view('contacto');
     }
 
-    public function enviarReserva(Request $request)
+    public function estacionamiento()
     {
-        return back()->with('success', true);
-    }
-
-    public function enviarContacto(Request $request)
-    {
-        return back()->with('success', true);
+        return view('estacionamiento');
     }
 }

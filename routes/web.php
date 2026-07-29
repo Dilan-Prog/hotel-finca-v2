@@ -19,5 +19,4 @@ Route::get('/habitaciones', [FincaController::class, 'habitaciones'])->name('hab
 Route::get('/servicios', [FincaController::class, 'servicios'])->name('servicios');
 Route::get('/reservaciones', [FincaController::class, 'reservaciones'])->name('reservaciones');
 Route::get('/contacto', [FincaController::class, 'contacto'])->name('contacto');
-Route::post('/reservaciones', [FincaController::class, 'enviarReserva'])->name('reservaciones.enviar');
-Route::post('/contacto', [FincaController::class, 'enviarContacto'])->name('contacto.enviar');
+Route::get('/hotel-estacionamiento-zacatecas', [FincaController::class, 'estacionamiento'])->name('estacionamiento');

@@ -2,6 +2,12 @@
 
 @section('title', 'Servicios — Hotel La Finca del Minero')
 
+@section('head')
+<meta name="description" content="Restaurante, WiFi, estacionamiento y el Salón El César para eventos en Hotel La Finca del Minero, Centro Histórico de Zacatecas.">
+<meta property="og:description" content="Restaurante, WiFi, estacionamiento y el Salón El César para eventos en Hotel La Finca del Minero, Centro Histórico de Zacatecas.">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1800&q=80">
+@endsection
+
 @section('styles')
 <style>
   .grid-icons{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
@@ -39,6 +45,7 @@
         <div style="font-size:26px;color:#9B1C1C">⊟</div>
         <h2 style="font-family:'Playfair Display',serif;font-size:clamp(15px,3vw,19px);font-weight:600;margin-top:10px">Estacionamiento</h2>
         <p style="font-size:12px;color:#746553;margin-top:5px;line-height:1.5">Espacio seguro para tu vehículo</p>
+        <a href="{{ route('estacionamiento') }}" style="display:inline-block;margin-top:8px;font-size:11px;font-weight:600;color:#9B1C1C;border-bottom:1px solid rgba(155,28,28,.4)">Ver detalles →</a>
       </div>
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:22px 14px;text-align:center;box-shadow:0 4px 16px rgba(44,26,14,.06)">
         <div style="font-size:26px;color:#9B1C1C">◴</div>
@@ -101,7 +108,7 @@
   <section style="background:#2C1A0E;color:#fff;text-align:center;padding:clamp(44px,8vw,70px) 16px">
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,48px);font-weight:700">¿Listo para hospedarte?</h2>
     <p style="margin-top:12px;font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,.7);font-weight:300">Reserva tu habitación o cotiza tu próximo evento con nosotros.</p>
-    <a href="{{ route('reservaciones') }}" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
+    <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
   </section>
 
 @endsection

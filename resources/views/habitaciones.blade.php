@@ -2,6 +2,12 @@
 
 @section('title', 'Habitaciones — Hotel La Finca del Minero')
 
+@section('head')
+<meta name="description" content="Habitaciones y suites en Hotel La Finca del Minero, en el Centro Histórico de Zacatecas. Reserva directo al mejor precio garantizado.">
+<meta property="og:description" content="Habitaciones y suites en Hotel La Finca del Minero, en el Centro Histórico de Zacatecas. Reserva directo al mejor precio garantizado.">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1800&q=80">
+@endsection
+
 @section('styles')
 <style>
   /* ── LAYOUT ── */
@@ -40,7 +46,9 @@
 
       <!-- ROOM 1 -->
       <article class="room-article">
-        <div style="min-height:clamp(200px,50vw,260px);background:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1000&q=80') center/cover"></div>
+        <div style="min-height:clamp(200px,50vw,260px);overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1000&q=80" width="1000" height="667" alt="Habitación Estándar en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
         <div style="padding:22px">
           <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,25px);font-weight:600">Habitación Estándar</h2>
           <p style="margin-top:8px;font-size:14px;line-height:1.6;color:#6b5d4f">Acogedora y luminosa, con cama matrimonial. Ideal para una escapada en pareja o viaje de trabajo.</p>
@@ -52,14 +60,16 @@
           </ul>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:20px">
             <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">890</strong> MXN / noche</span>
-            <a href="{{ route('reservaciones') }}" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
+            <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero reservar la Habitación Estándar en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
           </div>
         </div>
       </article>
 
       <!-- ROOM 2 -->
       <article class="room-article">
-        <div style="min-height:clamp(200px,50vw,260px);background:url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1000&q=80') center/cover"></div>
+        <div style="min-height:clamp(200px,50vw,260px);overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1000&q=80" width="1000" height="667" alt="Habitación Doble en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
         <div style="padding:22px">
           <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,25px);font-weight:600">Habitación Doble</h2>
           <p style="margin-top:8px;font-size:14px;line-height:1.6;color:#6b5d4f">Amplia, con dos camas individuales y rincón de descanso. Perfecta para familias o grupos de amigos.</p>
@@ -67,18 +77,20 @@
             <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px">WiFi</li>
             <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px">TV con cable</li>
             <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px">Dos camas</li>
-            <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px">Estacionamiento</li>
+            <li style="font-size:12px;color:#6b5d4f;background:#FAF6F0;border:1px solid #ece2d4;padding:5px 11px;border-radius:20px"><a href="{{ route('estacionamiento') }}" style="color:inherit">Estacionamiento</a></li>
           </ul>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:20px">
             <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">1,090</strong> MXN / noche</span>
-            <a href="{{ route('reservaciones') }}" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
+            <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero reservar la Habitación Doble en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
           </div>
         </div>
       </article>
 
       <!-- ROOM 3 -->
       <article class="room-article">
-        <div style="min-height:clamp(200px,50vw,260px);background:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1000&q=80') center/cover"></div>
+        <div style="min-height:clamp(200px,50vw,260px);overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1000&q=80" width="1000" height="667" alt="Suite Colonial en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
         <div style="padding:22px">
           <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,25px);font-weight:600">Suite Colonial</h2>
           <p style="margin-top:8px;font-size:14px;line-height:1.6;color:#6b5d4f">Nuestra estancia más amplia, con sala independiente, detalles de época y los mejores acabados de la finca.</p>
@@ -90,7 +102,7 @@
           </ul>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:20px">
             <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,27px);color:#2C1A0E">1,650</strong> MXN / noche</span>
-            <a href="{{ route('reservaciones') }}" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
+            <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero reservar la Suite Colonial en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="padding:13px 20px;background:#9B1C1C;color:#fff;font-size:14px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.25)">Reservar</a>
           </div>
         </div>
       </article>
@@ -120,7 +132,7 @@
             <select style="border:1px solid #e3d9cc;border-radius:3px;padding:11px;font-family:inherit;font-size:14px;outline:none"><option selected>0</option><option>1</option><option>2</option></select>
           </label>
         </div>
-        <a href="{{ route('reservaciones') }}" style="text-align:center;padding:14px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.28)">Reservar</a>
+        <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="text-align:center;padding:14px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 4px 14px rgba(155,28,28,.28)">Reservar</a>
       </div>
       <div style="margin-top:16px;padding-top:14px;border-top:1px solid #f0e8dc;display:flex;align-items:center;gap:9px">
         <span style="color:#7d6318;font-size:15px">✓</span>
@@ -134,7 +146,7 @@
   <section style="background:#2C1A0E;color:#fff;text-align:center;padding:clamp(44px,8vw,70px) 16px">
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,48px);font-weight:700">¿Listo para hospedarte?</h2>
     <p style="margin-top:12px;font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,.7);font-weight:300">Elige tu habitación y reserva directo al mejor precio.</p>
-    <a href="{{ route('reservaciones') }}" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
+    <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px;padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 8px 26px rgba(155,28,28,.45)">Reservar ahora</a>
   </section>
 
 @endsection

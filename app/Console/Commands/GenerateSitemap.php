@@ -23,6 +23,7 @@ class GenerateSitemap extends Command
             '/servicios' => 0.8,
             '/reservaciones' => 0.9,
             '/contacto' => 0.7,
+            '/hotel-estacionamiento-zacatecas' => 0.6,
         ];
 
         $sitemap = Sitemap::create();

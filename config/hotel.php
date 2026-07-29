@@ -17,6 +17,7 @@ return [
     'phone_secondary_e164' => '+524922288777',
 
     'whatsapp_e164' => '+524922288777',
+    'whatsapp_url' => 'https://wa.me/524922288777',
 
     'email' => 'ventas@hotellafincadelminero.com',
 
