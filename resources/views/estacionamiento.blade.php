@@ -20,6 +20,44 @@
         ],
     ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+<script type="application/ld+json">{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'FAQPage',
+    'mainEntity' => [
+        [
+            '@type' => 'Question',
+            'name' => '¿El estacionamiento del hotel tiene costo adicional?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'No. El estacionamiento es gratuito para huéspedes con reservación, sin costo adicional por noche.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Hay espacio garantizado en el estacionamiento?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Los espacios se asignan por orden de llegada, ya que el cupo es limitado. Te recomendamos avisarnos tu hora estimada de llegada para asegurar tu lugar.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Qué hoteles en Zacatecas tienen estacionamiento gratuito?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Hotel La Finca del Minero, en el Centro Histórico de Zacatecas, ofrece estacionamiento propio gratuito y vigilado para sus huéspedes.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Es seguro dejar mi auto en el estacionamiento del hotel?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Sí. El estacionamiento está vigilado y dentro del predio del hotel, no en la vía pública.',
+            ],
+        ],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 @endsection
 
 @section('styles')
@@ -100,6 +138,32 @@
           <li>Cupo reducido en temporada alta, puentes y festivales</li>
           <li>Acceso limitado por calles peatonales o restringidas al tráfico</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section style="max-width:800px;margin:0 auto;padding:0 16px clamp(44px,7vw,64px)">
+    <div style="text-align:center;margin-bottom:28px">
+      <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Preguntas frecuentes</span>
+      <h2 style="font-family:'Playfair Display',serif;font-size:clamp(19px,3.4vw,28px);font-weight:600;margin-top:8px">Dudas sobre el estacionamiento</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿El estacionamiento del hotel tiene costo adicional?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">No. El estacionamiento es gratuito para huéspedes con reservación, sin costo adicional por noche.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Hay espacio garantizado en el estacionamiento?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Los espacios se asignan por orden de llegada, ya que el cupo es limitado. Te recomendamos avisarnos tu hora estimada de llegada para asegurar tu lugar.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Qué hoteles en Zacatecas tienen estacionamiento gratuito?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Hotel La Finca del Minero, en el Centro Histórico de Zacatecas, ofrece estacionamiento propio gratuito y vigilado para sus huéspedes.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Es seguro dejar mi auto en el estacionamiento del hotel?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Sí. El estacionamiento está vigilado y dentro del predio del hotel, no en la vía pública.</p>
       </div>
     </div>
   </section>

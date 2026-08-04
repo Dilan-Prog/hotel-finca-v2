@@ -6,6 +6,60 @@
 <meta name="description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
 <meta property="og:description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
 <link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1800&q=80">
+<script type="application/ld+json">{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'FAQPage',
+    'mainEntity' => [
+        [
+            '@type' => 'Question',
+            'name' => '¿Cuánto cuesta un hotel en Zacatecas centro?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'En Hotel La Finca del Minero, en pleno Centro Histórico de Zacatecas, las habitaciones van desde 890 MXN por noche reservando directo, hasta 1,650 MXN por la Suite Colonial.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Los hoteles en Zacatecas incluyen desayuno?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Hotel La Finca del Minero cuenta con restaurante propio y desayunos caseros preparados cada mañana para nuestros huéspedes.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Dónde se ubica un hotel en Zacatecas centro como La Finca del Minero?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Hotel La Finca del Minero está en pleno Centro Histórico de Zacatecas, en C. Segunda de Matamoros 212, a pasos de la Catedral Basílica y del recorrido de la Feria Nacional.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Qué hoteles en Zacatecas centro tienen estacionamiento propio?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Hotel La Finca del Minero cuenta con estacionamiento propio, gratuito y vigilado para huéspedes con reservación, dentro del mismo predio del hotel en el Centro Histórico.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Cómo reservar un hotel en Zacatecas sin pagar comisión?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Reservando directo con Hotel La Finca del Minero por WhatsApp, sin pasar por plataformas intermediarias — el precio que ves es el que pagas.',
+            ],
+        ],
+        [
+            '@type' => 'Question',
+            'name' => '¿Qué servicios incluye un hotel boutique en el Centro Histórico de Zacatecas?',
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => 'Hotel La Finca del Minero incluye WiFi, restaurante con desayunos caseros, estacionamiento gratuito y vigilado, y el Salón El César para eventos con capacidad de 200 personas.',
+            ],
+        ],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 @endsection
 
 @section('styles')
@@ -282,6 +336,22 @@
       <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
         <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Los hoteles en Zacatecas incluyen desayuno?</h3>
         <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Hotel La Finca del Minero cuenta con restaurante propio y desayunos caseros preparados cada mañana para nuestros huéspedes.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Dónde se ubica un hotel en Zacatecas centro como La Finca del Minero?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Hotel La Finca del Minero está en pleno Centro Histórico de Zacatecas, a pasos de la Catedral Basílica y del recorrido de la Feria Nacional.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Qué hoteles en Zacatecas centro tienen estacionamiento propio?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Hotel La Finca del Minero cuenta con estacionamiento propio, gratuito y vigilado para huéspedes con reservación, dentro del mismo predio del hotel.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Cómo reservar un hotel en Zacatecas sin pagar comisión?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Reservando directo con Hotel La Finca del Minero por WhatsApp, sin pasar por plataformas intermediarias — el precio que ves es el que pagas.</p>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(44,26,14,.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(44,26,14,.05)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Qué servicios incluye un hotel boutique en el Centro Histórico de Zacatecas?</h3>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">Hotel La Finca del Minero incluye WiFi, restaurante con desayunos caseros, estacionamiento gratuito y vigilado, y el Salón El César para eventos con capacidad de 200 personas.</p>
       </div>
     </div>
   </section>
