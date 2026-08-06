@@ -5,7 +5,7 @@
 @section('head')
 <meta name="description" content="Estacionamiento gratuito y vigilado en Hotel La Finca del Minero, a pasos del Centro Histórico de Zacatecas. Olvídate de buscar dónde dejar tu auto.">
 <meta property="og:description" content="Estacionamiento gratuito y vigilado en Hotel La Finca del Minero, a pasos del Centro Histórico de Zacatecas. Olvídate de buscar dónde dejar tu auto.">
-<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?w=1800&q=80">
+<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-06.webp') }}">
 <script type="application/ld+json">{!! json_encode([
     '@context' => 'https://schema.org',
     '@type' => 'QAPage',
@@ -108,7 +108,7 @@
   </section>
 
   <!-- ===== CONTEXTO LOCAL ===== -->
-  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.82),rgba(20,11,5,.92)),url('https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?w=1800&q=80') center/cover;background-color:#1d110a">
+  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.82),rgba(20,11,5,.92)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-06.webp') }}') center/cover;background-color:#1d110a">
     <div style="max-width:900px;margin:0 auto;padding:clamp(40px,7vw,66px) 16px">
       <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,3.6vw,30px);font-weight:700;line-height:1.2">Por qué el estacionamiento importa en el Centro Histórico de Zacatecas</h2>
       <p style="margin-top:14px;font-size:clamp(14px,2vw,16px);color:rgba(255,255,255,.85);line-height:1.75;font-weight:300">

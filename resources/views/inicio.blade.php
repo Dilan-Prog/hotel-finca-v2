@@ -5,7 +5,7 @@
 @section('head')
 <meta name="description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
 <meta property="og:description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
-<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1800&q=80">
+<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}">
 <script type="application/ld+json">{!! json_encode([
     '@context' => 'https://schema.org',
     '@type' => 'FAQPage',
@@ -97,7 +97,7 @@
 @section('content')
 
   <!-- ===== HERO ===== -->
-  <section style="position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(180deg,rgba(20,11,5,.28),rgba(20,11,5,.82)),url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=1800&q=80') center/cover;background-color:#2C1A0E">
+  <section style="position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(180deg,rgba(20,11,5,.28),rgba(20,11,5,.82)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#2C1A0E">
     <div style="position:relative;max-width:1240px;margin:0 auto;width:100%;padding:clamp(40px,8vw,64px) 16px clamp(48px,8vw,72px);animation:fmFade .9s ease both">
       <span style="display:inline-block;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;color:#E2C16A;font-weight:600;margin-bottom:16px">Hotel boutique · 4 estrellas</span>
       <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(30px,6vw,66px);line-height:1.08;max-width:18ch;text-wrap:balance">Hotel en Zacatecas — Hotel La Finca del Minero en el Centro Histórico</h1>
@@ -174,7 +174,7 @@
     <div class="grid-rooms">
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
         <div style="height:clamp(180px,45vw,210px);overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&q=80" width="900" height="600" alt="Habitación Estándar en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="{{ asset('images/habitacion-estandar-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Habitación Estándar en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div style="padding:20px">
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Estándar</h3>
@@ -187,7 +187,7 @@
       </article>
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
         <div style="height:clamp(180px,45vw,210px);overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80" width="900" height="600" alt="Habitación Doble en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="{{ asset('images/habitacion-doble-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Habitación Doble en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div style="padding:20px">
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Doble</h3>
@@ -200,7 +200,7 @@
       </article>
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
         <div style="height:clamp(180px,45vw,210px);overflow:hidden">
-          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" width="900" height="600" alt="Suite Colonial en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="{{ asset('images/suite-colonial-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Suite Colonial en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div style="padding:20px">
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Suite Colonial</h3>
@@ -245,7 +245,7 @@
   </section>
 
   <!-- ===== SALÓN EL CÉSAR BANNER ===== -->
-  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.62),rgba(20,11,5,.86)),url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1600&q=80') center/cover;background-color:#1d110a;margin-top:20px">
+  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.62),rgba(20,11,5,.86)),url('{{ asset('images/lobby-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#1d110a;margin-top:20px">
     <div style="max-width:1140px;margin:0 auto;padding:clamp(44px,8vw,78px) 16px">
       <div class="grid-salon">
         <div>
@@ -256,10 +256,10 @@
         </div>
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="display:flex;gap:12px">
-            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=700&q=80') center/cover"></div>
-            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=700&q=80') center/cover"></div>
+            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover"></div>
+            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover"></div>
           </div>
-          <div style="height:clamp(100px,28vw,130px);border-radius:4px;background:url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1100&q=80') center/cover"></div>
+          <div style="height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
         </div>
       </div>
     </div>

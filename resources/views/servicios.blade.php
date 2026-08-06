@@ -5,7 +5,7 @@
 @section('head')
 <meta name="description" content="Restaurante, WiFi, estacionamiento y el Salón El César para eventos en Hotel La Finca del Minero, Centro Histórico de Zacatecas.">
 <meta property="og:description" content="Restaurante, WiFi, estacionamiento y el Salón El César para eventos en Hotel La Finca del Minero, Centro Histórico de Zacatecas.">
-<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1800&q=80">
+<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/lobby-hotel-la-finca-del-minero-zacatecas-01.webp') }}">
 @endsection
 
 @section('styles')
@@ -61,14 +61,14 @@
   </section>
 
   <!-- ===== SALÓN EL CÉSAR ===== -->
-  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.78),rgba(20,11,5,.92)),url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1800&q=80') center/cover;background-color:#1d110a">
+  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.78),rgba(20,11,5,.92)),url('{{ asset('images/lobby-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#1d110a">
     <div style="max-width:1240px;margin:0 auto;padding:clamp(44px,8vw,78px) 16px clamp(32px,6vw,60px)">
       <div style="text-align:center;max-width:60ch;margin:0 auto clamp(24px,4vw,44px)">
         <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#E2C16A;font-weight:600">Nuestro espacio estrella</span>
         <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,6vw,58px);font-weight:700;margin-top:10px;line-height:1.04">Salón El César</h2>
         <p style="margin-top:12px;font-size:clamp(14px,2vw,18px);color:rgba(255,255,255,.82);line-height:1.65;font-weight:300">El escenario ideal para bodas, XV años, congresos y celebraciones de gala en el corazón de Zacatecas.</p>
       </div>
-      <div style="height:clamp(200px,52vw,460px);border-radius:7px;overflow:hidden;background:url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1800&q=80') center/cover;box-shadow:0 16px 50px rgba(0,0,0,.4)"></div>
+      <div style="height:clamp(200px,52vw,460px);border-radius:7px;overflow:hidden;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;box-shadow:0 16px 50px rgba(0,0,0,.4)"></div>
       <div class="grid-features">
         <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:20px">
           <div style="color:#E2C16A;font-size:18px">✦</div>
@@ -92,10 +92,10 @@
         </div>
       </div>
       <div class="grid-gallery">
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80') center/cover"></div>
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=600&q=80') center/cover"></div>
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('https://images.unsplash.com/photo-1606800052052-a08af7148866?w=600&q=80') center/cover"></div>
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-04.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
       </div>
       <div class="cta-row" style="margin-top:clamp(22px,4vw,36px)">
         <a href="{{ route('contacto') }}" style="padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 6px 22px rgba(155,28,28,.45)">Solicitar cotización</a>

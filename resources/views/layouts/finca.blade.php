@@ -20,16 +20,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>@yield('title', config('hotel.name'))</title>
 <link rel="canonical" href="{{ $canonicalUrl }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16.png') }}">
+<link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
+@php $ogImage = $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp'; @endphp
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ config('hotel.name') }}">
 <meta property="og:title" content="@yield('title', config('hotel.name'))">
 <meta property="og:url" content="{{ $canonicalUrl }}">
+<meta property="og:image" content="{{ $ogImage }}">
+<meta property="og:image:width" content="1800">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ $ogImage }}">
 <script type="application/ld+json">{!! json_encode([
     '@context' => 'https://schema.org',
     '@type' => 'Hotel',
     'name' => config('hotel.name'),
     'url' => $prodDomain.'/',
     'telephone' => config('hotel.phone_e164'),
+    'image' => [
+        $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp',
+        $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-02.webp',
+        $prodDomain.'/images/patio-interior-hotel-la-finca-del-minero-zacatecas-01.webp',
+    ],
     'address' => [
         '@type' => 'PostalAddress',
         'streetAddress' => config('hotel.address.street'),
@@ -62,7 +75,6 @@
 @yield('head')
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @yield('styles')
