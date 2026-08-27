@@ -5,7 +5,7 @@
 @section('head')
 <meta name="description" content="Restaurante, WiFi, estacionamiento y el Salón El César para eventos en Hotel La Finca del Minero, Centro Histórico de Zacatecas.">
 <meta property="og:description" content="Restaurante, WiFi, estacionamiento y el Salón El César para eventos en Hotel La Finca del Minero, Centro Histórico de Zacatecas.">
-<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/lobby-hotel-la-finca-del-minero-zacatecas-01.webp') }}">
+<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-01.webp') }}">
 @endsection
 
 @section('styles')
@@ -61,45 +61,38 @@
   </section>
 
   <!-- ===== SALÓN EL CÉSAR ===== -->
-  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.78),rgba(20,11,5,.92)),url('{{ asset('images/lobby-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#1d110a">
+  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.78),rgba(20,11,5,.92)),url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#1d110a">
     <div style="max-width:1240px;margin:0 auto;padding:clamp(44px,8vw,78px) 16px clamp(32px,6vw,60px)">
       <div style="text-align:center;max-width:60ch;margin:0 auto clamp(24px,4vw,44px)">
         <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#E2C16A;font-weight:600">Nuestro espacio estrella</span>
         <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,6vw,58px);font-weight:700;margin-top:10px;line-height:1.04">Salón El César</h2>
-        <p style="margin-top:12px;font-size:clamp(14px,2vw,18px);color:rgba(255,255,255,.82);line-height:1.65;font-weight:300">El escenario ideal para bodas, XV años, congresos y celebraciones de gala en el corazón de Zacatecas.</p>
+        <p style="margin-top:12px;font-size:clamp(14px,2vw,18px);color:rgba(255,255,255,.82);line-height:1.65;font-weight:300">El escenario ideal para bodas, XV años, congresos y celebraciones de gala en el corazón de Zacatecas. Capacidad para 200 personas.</p>
       </div>
-      <div style="height:clamp(200px,52vw,460px);border-radius:7px;overflow:hidden;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;box-shadow:0 16px 50px rgba(0,0,0,.4)"></div>
-      <div class="grid-features">
-        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:20px">
-          <div style="color:#E2C16A;font-size:18px">✦</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Todo tipo de eventos</h3>
-          <p style="font-size:13px;color:rgba(255,255,255,.7);margin-top:5px;line-height:1.5">Bodas, XV años, congresos, cenas de gala y más.</p>
-        </div>
-        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:20px">
-          <div style="color:#E2C16A;font-size:18px">✦</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Capacidad 200 personas</h3>
-          <p style="font-size:13px;color:rgba(255,255,255,.7);margin-top:5px;line-height:1.5">Espacio versátil que se adapta a tu celebración.</p>
-        </div>
-        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:20px">
-          <div style="color:#E2C16A;font-size:18px">✦</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Bellísima arquitectura</h3>
-          <p style="font-size:13px;color:rgba(255,255,255,.7);margin-top:5px;line-height:1.5">Detalles coloniales que enmarcan cada momento.</p>
-        </div>
-        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:20px">
-          <div style="color:#E2C16A;font-size:18px">✦</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:600;margin-top:8px">Estacionamiento</h3>
-          <p style="font-size:13px;color:rgba(255,255,255,.7);margin-top:5px;line-height:1.5">Comodidad y seguridad para todos tus invitados.</p>
-        </div>
+      <div style="height:clamp(200px,52vw,460px);border-radius:7px;overflow:hidden;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover;box-shadow:0 16px 50px rgba(0,0,0,.4)"></div>
+
+      <div style="margin-top:clamp(28px,5vw,44px);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:clamp(20px,4vw,32px)">
+        <h3 style="font-family:'Playfair Display',serif;font-size:clamp(19px,3vw,24px);font-weight:600">La contratación de tu evento incluye</h3>
+        <ul style="list-style:none;margin-top:16px;display:grid;grid-template-columns:1fr;gap:11px">
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Menú a 2 tiempos (entrada y fuerte), desde $480 MXN por persona — pollo, cerdo o pescado</li>
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Salón por cinco horas para tu evento</li>
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Descorche, refresco y hielo ilimitado durante las cinco horas (no incluye cerveza ni coctelería)</li>
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Montaje, mantelería, plaqué y cristalería a tu elección</li>
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Doncella para los baños, seguridad, capitán y meseros</li>
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Estacionamiento para tus invitados (cupo limitado)</li>
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Prueba de menú para 4 personas (2 platillos)</li>
+          <li style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.85);line-height:1.5"><span style="color:#E2C16A">✦</span> Tarifa especial de $990 MXN/noche (sencilla o doble) para tus invitados que se hospeden en el hotel</li>
+        </ul>
       </div>
+
       <div class="grid-gallery">
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-04.webp') }}') center/cover"></div>
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover"></div>
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-04.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-05.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-06.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-07.webp') }}') center/cover"></div>
       </div>
       <div class="cta-row" style="margin-top:clamp(22px,4vw,36px)">
         <a href="{{ route('contacto') }}" style="padding:15px 36px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 6px 22px rgba(155,28,28,.45)">Solicitar cotización</a>
-        <a href="{{ route('servicios') }}" style="font-size:15px;font-weight:600;color:#E2C16A;border-bottom:1.5px solid #E2C16A;padding-bottom:3px">Galería de fotos del salón →</a>
       </div>
     </div>
   </section>

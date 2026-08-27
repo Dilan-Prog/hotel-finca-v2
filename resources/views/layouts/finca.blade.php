@@ -123,8 +123,8 @@
     <div style="max-width:1140px;margin:0 auto">
       <div class="grid-footer">
         <div>
-          <span style="font-family:'Playfair Display',serif;font-weight:700;font-size:18px;color:#fff;display:block">Hotel La Finca del Minero</span>
-          <span style="color:#B8922A;font-size:12px;letter-spacing:3px;display:block;margin-top:6px">★★★★</span>
+          <img src="{{ asset('images/logo-hotel-la-finca-del-minero-zacatecas-blanco.webp') }}" alt="Hotel La Finca del Minero" style="height:56px;width:auto;max-width:100%;align-self:flex-start;object-fit:contain;display:block">
+          <span style="color:#B8922A;font-size:12px;letter-spacing:3px;display:block;margin-top:10px">★★★★</span>
           <p style="margin-top:10px;font-size:13px;line-height:1.6;max-width:34ch">Centro histórico de Zacatecas, México. La calidez de una hacienda colonial.</p>
         </div>
         <div>

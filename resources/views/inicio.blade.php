@@ -178,7 +178,7 @@
         </div>
         <div style="padding:20px">
           <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Estándar</h3>
-          <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Cómoda y luminosa, ideal para una o dos personas.</p>
+          <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Sencilla o doble, cómoda y luminosa.</p>
           <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
             <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">890</strong> MXN</span>
             <a href="{{ route('habitaciones') }}" style="font-size:13px;font-weight:600;color:#9B1C1C">Ver habitación →</a>
@@ -187,11 +187,24 @@
       </article>
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
         <div style="height:clamp(180px,45vw,210px);overflow:hidden">
-          <img src="{{ asset('images/habitacion-doble-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Habitación Doble en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="{{ asset('images/habitacion-ejecutiva-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Habitación Ejecutiva en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div style="padding:20px">
-          <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Doble</h3>
-          <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Espacio amplio con dos camas, perfecta para familias.</p>
+          <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Habitación Ejecutiva</h3>
+          <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Sencilla o doble, con acabados más modernos.</p>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">990</strong> MXN</span>
+            <a href="{{ route('habitaciones') }}" style="font-size:13px;font-weight:600;color:#9B1C1C">Ver habitación →</a>
+          </div>
+        </div>
+      </article>
+      <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
+        <div style="height:clamp(180px,45vw,210px);overflow:hidden">
+          <img src="{{ asset('images/jr-suite-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Jr. Suite en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+        </div>
+        <div style="padding:20px">
+          <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Jr. Suite</h3>
+          <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Sencilla o doble, con sala de estar y mayor amplitud.</p>
           <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
             <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">1,090</strong> MXN</span>
             <a href="{{ route('habitaciones') }}" style="font-size:13px;font-weight:600;color:#9B1C1C">Ver habitación →</a>
@@ -200,13 +213,13 @@
       </article>
       <article style="background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 8px 30px rgba(44,26,14,.09);border:1px solid rgba(44,26,14,.05)">
         <div style="height:clamp(180px,45vw,210px);overflow:hidden">
-          <img src="{{ asset('images/suite-colonial-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Suite Colonial en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
+          <img src="{{ asset('images/jr-suite-ejecutiva-hotel-la-finca-del-minero-zacatecas-01.webp') }}" width="1000" height="667" alt="Jr. Suite Ejecutiva en Hotel La Finca del Minero, Zacatecas" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">
         </div>
         <div style="padding:20px">
-          <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Suite Colonial</h3>
-          <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Nuestra mejor estancia, con detalles de época y sala.</p>
+          <h3 style="font-family:'Playfair Display',serif;font-size:21px;font-weight:600">Jr. Suite Ejecutiva</h3>
+          <p style="margin-top:6px;font-size:14px;line-height:1.55;color:#6b5d4f">Nuestra mejor estancia, con cama king size.</p>
           <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
-            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">1,650</strong> MXN</span>
+            <span style="font-size:13px;color:#746553">Desde <strong style="font-family:'Playfair Display',serif;font-size:22px;color:#2C1A0E">1,090</strong> MXN</span>
             <a href="{{ route('habitaciones') }}" style="font-size:13px;font-weight:600;color:#9B1C1C">Ver habitación →</a>
           </div>
         </div>
@@ -245,21 +258,21 @@
   </section>
 
   <!-- ===== SALÓN EL CÉSAR BANNER ===== -->
-  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.62),rgba(20,11,5,.86)),url('{{ asset('images/lobby-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#1d110a;margin-top:20px">
+  <section style="color:#fff;background:linear-gradient(120deg,rgba(20,11,5,.62),rgba(20,11,5,.86)),url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#1d110a;margin-top:20px">
     <div style="max-width:1140px;margin:0 auto;padding:clamp(44px,8vw,78px) 16px">
       <div class="grid-salon">
         <div>
           <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#E2C16A;font-weight:600">Eventos</span>
           <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,5vw,46px);font-weight:700;margin-top:10px;line-height:1.08">Salón El César</h2>
-          <p style="margin-top:14px;font-size:clamp(14px,2vw,17px);line-height:1.6;color:rgba(255,255,255,.82);max-width:42ch;font-weight:300">Capacidad para 200 personas · Todo tipo de eventos · Arquitectura espectacular.</p>
+          <p style="margin-top:14px;font-size:clamp(14px,2vw,17px);line-height:1.6;color:rgba(255,255,255,.82);max-width:42ch;font-weight:300">Capacidad para 200 personas · Todo tipo de eventos · Menús desde $480 MXN.</p>
           <a href="{{ route('servicios') }}" style="display:inline-block;margin-top:24px;padding:14px 30px;background:#9B1C1C;color:#fff;font-size:15px;font-weight:600;border-radius:3px;box-shadow:0 6px 20px rgba(155,28,28,.4)">Cotizar evento</a>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="display:flex;gap:12px">
-            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover"></div>
-            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/patio-interior-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover"></div>
+            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover"></div>
+            <div style="flex:1;height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
           </div>
-          <div style="height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
+          <div style="height:clamp(100px,28vw,130px);border-radius:4px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-04.webp') }}') center/cover"></div>
         </div>
       </div>
     </div>
