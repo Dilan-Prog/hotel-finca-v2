@@ -5,7 +5,7 @@
 @section('head')
 <meta name="description" content="Habitaciones y suites en Hotel La Finca del Minero, en el Centro Histórico de Zacatecas. Reserva directo al mejor precio garantizado.">
 <meta property="og:description" content="Habitaciones y suites en Hotel La Finca del Minero, en el Centro Histórico de Zacatecas. Reserva directo al mejor precio garantizado.">
-<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}">
+<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp') }}">
 @endsection
 
 @section('styles')
@@ -37,7 +37,7 @@
 @section('content')
 
   <!-- ===== PAGE HEADER ===== -->
-  <section style="background:linear-gradient(180deg,rgba(20,11,5,.5),rgba(20,11,5,.78)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#2C1A0E;color:#fff;padding:clamp(40px,8vw,62px) 16px clamp(48px,8vw,70px)">
+  <section style="background:linear-gradient(180deg,rgba(20,11,5,.5),rgba(20,11,5,.78)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp') }}') center/cover;background-color:#2C1A0E;color:#fff;padding:clamp(40px,8vw,62px) 16px clamp(48px,8vw,70px)">
     <div style="max-width:1140px;margin:0 auto">
       <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#E2C16A;font-weight:600">Hospedaje</span>
       <h1 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,52px);font-weight:700;margin-top:10px;line-height:1.05;max-width:20ch;text-wrap:balance">Habitaciones en Hotel La Finca del Minero, Zacatecas</h1>
@@ -226,7 +226,7 @@
     <div style="max-width:1140px;margin:0 auto;padding:clamp(36px,6vw,56px) 16px clamp(44px,7vw,64px)">
       <div style="text-align:center;margin-bottom:26px">
         <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Recorrido</span>
-        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,36px);font-weight:700;margin-top:8px">Conoce nuestras habitaciones en video</h2>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,36px);font-weight:700;margin-top:8px">Conoce el hotel en video</h2>
       </div>
       <div class="video-grid">
         <video controls preload="none" poster="{{ asset('images/poster-recorrido-habitaciones-hotel-la-finca-del-minero-zacatecas-01.webp') }}">

@@ -23,7 +23,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32.png') }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16.png') }}">
 <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
-@php $ogImage = $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp'; @endphp
+@php $ogImage = $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp'; @endphp
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ config('hotel.name') }}">
 <meta property="og:title" content="@yield('title', config('hotel.name'))">
@@ -39,7 +39,7 @@
     'url' => $prodDomain.'/',
     'telephone' => config('hotel.phone_e164'),
     'image' => [
-        $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp',
+        $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp',
         $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-02.webp',
         $prodDomain.'/images/patio-interior-hotel-la-finca-del-minero-zacatecas-01.webp',
     ],
@@ -125,10 +125,11 @@
         <div>
           <img src="{{ asset('images/logo-hotel-la-finca-del-minero-zacatecas-blanco.webp') }}" alt="Hotel La Finca del Minero" style="height:56px;width:auto;max-width:100%;align-self:flex-start;object-fit:contain;display:block">
           <span style="color:#B8922A;font-size:12px;letter-spacing:3px;display:block;margin-top:10px">★★★★</span>
-          <p style="margin-top:10px;font-size:13px;line-height:1.6;max-width:34ch">Centro histórico de Zacatecas, México. La calidez de una hacienda colonial.</p>
+          <p style="margin-top:10px;font-size:13px;line-height:1.6;max-width:34ch">Centro histórico de Zacatecas, México. La calidez de un edificio colonial.</p>
         </div>
         <div>
           <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#B8922A;font-weight:600">Contacto</span>
+          <p style="margin-top:10px;font-size:14px;line-height:1.8">{{ config('hotel.address.street') }}<br>{{ config('hotel.address.locality') }}, {{ config('hotel.address.region') }} {{ config('hotel.address.postal_code') }}</p>
           <p style="margin-top:10px;font-size:14px;line-height:1.8">Tel. 01 (492) 925-03-10 al 13<br>Lada sin costo: 01 800 215 2604</p>
         </div>
         <div>

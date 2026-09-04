@@ -74,6 +74,7 @@
         </div>
         <div style="background:#2C1A0E;color:#fff;border-radius:7px;padding:clamp(20px,4vw,28px)">
           <h3 style="font-family:'Playfair Display',serif;font-size:clamp(18px,4vw,21px);font-weight:600">En el corazón de la ciudad</h3>
+          <p style="margin-top:10px;font-size:14px;line-height:1.65;color:#E2C16A;font-weight:600">{{ config('hotel.address.street') }}, {{ config('hotel.address.locality') }}<br>{{ config('hotel.address.postal_code') }} {{ config('hotel.address.region') }}, México</p>
           <p style="margin-top:10px;font-size:14px;line-height:1.65;color:rgba(255,255,255,.78)">A pasos de callejones, museos, teleférico y los principales atractivos de Zacatecas.</p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
             <span style="font-size:12px;color:#E2C16A;border:1px solid rgba(184,146,42,.5);padding:5px 11px;border-radius:20px">Cerro de la Bufa</span>

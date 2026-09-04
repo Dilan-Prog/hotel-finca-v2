@@ -5,7 +5,7 @@
 @section('head')
 <meta name="description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
 <meta property="og:description" content="Hotel en el Centro Histórico de Zacatecas con desayuno, restaurante y estacionamiento gratuito. Reserva directo y obtén el mejor precio garantizado.">
-<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}">
+<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp') }}">
 <script type="application/ld+json">{!! json_encode([
     '@context' => 'https://schema.org',
     '@type' => 'FAQPage',
@@ -97,11 +97,11 @@
 @section('content')
 
   <!-- ===== HERO ===== -->
-  <section style="position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(180deg,rgba(20,11,5,.28),rgba(20,11,5,.82)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#2C1A0E">
+  <section style="position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(180deg,rgba(20,11,5,.28),rgba(20,11,5,.82)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp') }}') center/cover;background-color:#2C1A0E">
     <div style="position:relative;max-width:1240px;margin:0 auto;width:100%;padding:clamp(40px,8vw,64px) 16px clamp(48px,8vw,72px);animation:fmFade .9s ease both">
       <span style="display:inline-block;font-size:11px;letter-spacing:3.5px;text-transform:uppercase;color:#E2C16A;font-weight:600;margin-bottom:16px">Hotel boutique · 4 estrellas</span>
       <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(30px,6vw,66px);line-height:1.08;max-width:18ch;text-wrap:balance">Hotel en Zacatecas — Hotel La Finca del Minero en el Centro Histórico</h1>
-      <p style="margin-top:18px;max-width:44ch;font-size:clamp(15px,2vw,19px);line-height:1.65;color:rgba(255,255,255,.82);font-weight:300">Una hacienda colonial restaurada a pasos de los callejones, museos y el teleférico.</p>
+      <p style="margin-top:18px;max-width:44ch;font-size:clamp(15px,2vw,19px);line-height:1.65;color:rgba(255,255,255,.82);font-weight:300">Un edificio colonial restaurado a pasos de los callejones, museos y el teleférico.</p>
       <div class="hero-btns">
         <a href="{{ config('hotel.whatsapp_url') }}?text={{ urlencode('Hola, quiero hacer una reservación en Hotel La Finca del Minero.') }}" target="_blank" rel="noopener" style="padding:16px 32px;background:#9B1C1C;color:#fff;font-size:16px;font-weight:600;border-radius:3px;box-shadow:0 6px 22px rgba(155,28,28,.4)">Reservar ahora</a>
         <a href="{{ route('habitaciones') }}" style="padding:16px 28px;border:1.5px solid rgba(255,255,255,.45);color:#fff;font-size:16px;font-weight:500;border-radius:3px">Ver habitaciones</a>
@@ -138,7 +138,7 @@
   <section style="max-width:820px;margin:0 auto;padding:clamp(40px,6vw,60px) 16px 10px;text-align:center">
     <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#7d6318;font-weight:600">Bienvenido</span>
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(22px,4vw,36px);font-weight:700;margin-top:10px;line-height:1.15">Hotel Centro de Zacatecas</h2>
-    <p style="margin-top:14px;font-size:clamp(14px,2vw,17px);color:#6b5d4f;line-height:1.7">Hotel La Finca del Minero es una hacienda colonial restaurada en pleno Centro Histórico de Zacatecas, a pasos de la Catedral Basílica y del recorrido de la Feria Nacional. Vive la ciudad desde su corazón, sin depender del coche para llegar a lo que quieres conocer.</p>
+    <p style="margin-top:14px;font-size:clamp(14px,2vw,17px);color:#6b5d4f;line-height:1.7">Hotel La Finca del Minero es un edificio colonial restaurado en pleno Centro Histórico de Zacatecas, a pasos de la Catedral Basílica y del recorrido de la Feria Nacional. Vive la ciudad desde su corazón, sin depender del coche para llegar a lo que quieres conocer.</p>
   </section>
 
   <!-- ===== 3-COLUMN STRIP ===== -->

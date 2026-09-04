@@ -68,7 +68,7 @@
         <h2 style="font-family:'Playfair Display',serif;font-size:clamp(28px,6vw,58px);font-weight:700;margin-top:10px;line-height:1.04">Salón El César</h2>
         <p style="margin-top:12px;font-size:clamp(14px,2vw,18px);color:rgba(255,255,255,.82);line-height:1.65;font-weight:300">El escenario ideal para bodas, XV años, congresos y celebraciones de gala en el corazón de Zacatecas. Capacidad para 200 personas.</p>
       </div>
-      <div style="height:clamp(200px,52vw,460px);border-radius:7px;overflow:hidden;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover;box-shadow:0 16px 50px rgba(0,0,0,.4)"></div>
+      <div style="height:clamp(200px,52vw,460px);border-radius:7px;overflow:hidden;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover;box-shadow:0 16px 50px rgba(0,0,0,.4)"></div>
 
       <div style="margin-top:clamp(28px,5vw,44px);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:clamp(20px,4vw,32px)">
         <h3 style="font-family:'Playfair Display',serif;font-size:clamp(19px,3vw,24px);font-weight:600">La contratación de tu evento incluye</h3>
@@ -85,7 +85,7 @@
       </div>
 
       <div class="grid-gallery">
-        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-03.webp') }}') center/cover"></div>
+        <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-02.webp') }}') center/cover"></div>
         <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-04.webp') }}') center/cover"></div>
         <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-05.webp') }}') center/cover"></div>
         <div style="height:clamp(76px,24vw,110px);border-radius:5px;background:url('{{ asset('images/salon-el-cesar-hotel-la-finca-del-minero-zacatecas-06.webp') }}') center/cover"></div>

@@ -5,7 +5,7 @@
 @section('head')
 <meta name="description" content="Reserva tu habitación directo con Hotel La Finca del Minero por WhatsApp. Sin intermediarios, mejor precio garantizado en Zacatecas.">
 <meta property="og:description" content="Reserva tu habitación directo con Hotel La Finca del Minero por WhatsApp. Sin intermediarios, mejor precio garantizado en Zacatecas.">
-<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}">
+<link rel="preload" as="image" fetchpriority="high" href="{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp') }}">
 @endsection
 
 @section('styles')
@@ -19,7 +19,7 @@
 @section('content')
 
   <!-- ===== PAGE HEADER ===== -->
-  <section style="background:linear-gradient(180deg,rgba(20,11,5,.55),rgba(20,11,5,.82)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-01.webp') }}') center/cover;background-color:#2C1A0E;color:#fff;padding:clamp(40px,8vw,60px) 16px clamp(44px,8vw,64px);text-align:center">
+  <section style="background:linear-gradient(180deg,rgba(20,11,5,.55),rgba(20,11,5,.82)),url('{{ asset('images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp') }}') center/cover;background-color:#2C1A0E;color:#fff;padding:clamp(40px,8vw,60px) 16px clamp(44px,8vw,64px);text-align:center">
     <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#E2C16A;font-weight:600">Reserva directa</span>
     <h1 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,52px);font-weight:700;margin-top:10px;line-height:1.05;max-width:20ch;margin-left:auto;margin-right:auto;text-wrap:balance">Reserva tu habitación directamente con nosotros</h1>
     <p style="margin-top:14px;font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,.8);max-width:52ch;margin-left:auto;margin-right:auto;line-height:1.6;font-weight:300">Sin intermediarios. El mejor precio, siempre, está aquí.</p>
