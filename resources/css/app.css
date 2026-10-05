@@ -57,7 +57,7 @@ input,select,textarea{font-family:inherit}
 .btn-gold:hover,.btn-gold:focus-visible{
   background:var(--c-btn-gold-hover);
   transform:translateY(-2px);
-  box-shadow:0 0 0 2px var(--c-btn-gold-glow-ring),0 0 18px var(--c-btn-gold-glow),0 0 42px var(--c-btn-gold-glow),0 12px 28px rgba(0,0,0,.3);
+  box-shadow:0 0 18px var(--c-btn-gold-glow),0 0 42px var(--c-btn-gold-glow),0 12px 28px rgba(0,0,0,.3);
   filter:brightness(1.15) saturate(1.1);
 }
 .btn-primary{
@@ -68,7 +68,7 @@ input,select,textarea{font-family:inherit}
 .btn-primary:hover,.btn-primary:focus-visible{
   background:var(--c-primary-hover);
   transform:translateY(-2px);
-  box-shadow:0 0 0 2px var(--c-primary-glow-ring),0 0 18px var(--c-primary-glow),0 0 40px var(--c-primary-glow),0 12px 28px rgba(var(--c-primary-rgb),.35);
+  box-shadow:0 0 18px var(--c-primary-glow),0 0 40px var(--c-primary-glow),0 12px 28px rgba(var(--c-primary-rgb),.35);
   filter:brightness(1.12);
 }
 .btn-outline-light{
