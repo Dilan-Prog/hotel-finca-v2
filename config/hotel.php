@@ -19,6 +19,18 @@ return [
     'whatsapp_e164' => '+524922232151',
     'whatsapp_url' => 'https://wa.me/524922232151',
 
+    // Mensaje de WhatsApp por página (botón flotante y botones del header).
+    // Los botones dentro de cada página llevan su propio mensaje según la sección.
+    'whatsapp_messages' => [
+        'default' => 'Hola, quiero más información sobre Hotel La Finca del Minero.',
+        'inicio' => 'Hola, vi su sitio web y quiero información y disponibilidad en Hotel La Finca del Minero.',
+        'habitaciones' => 'Hola, estuve viendo las habitaciones en su sitio web y quiero reservar. ¿Tienen disponibilidad?',
+        'servicios' => 'Hola, estuve viendo los servicios de Hotel La Finca del Minero y quiero más información.',
+        'reservaciones' => 'Hola, quiero hacer una reservación en Hotel La Finca del Minero.',
+        'contacto' => 'Hola, tengo una pregunta sobre Hotel La Finca del Minero.',
+        'estacionamiento' => 'Hola, quiero reservar en Hotel La Finca del Minero y confirmar el estacionamiento.',
+    ],
+
     'email' => 'ventas@hotellafincadelminero.com',
 
     'address' => [
