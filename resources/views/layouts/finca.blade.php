@@ -39,6 +39,7 @@
     'name' => config('hotel.name'),
     'url' => $prodDomain.'/',
     'telephone' => config('hotel.phone_e164'),
+    'email' => config('hotel.email'),
     'sameAs' => array_values(config('hotel.social')),
     'image' => [
         $prodDomain.'/images/fachada-hotel-la-finca-del-minero-zacatecas-05.webp',
@@ -132,7 +133,7 @@
         <div>
           <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--c-gold-light);font-weight:600">Contacto</span>
           <p style="margin-top:10px;font-size:14px;line-height:1.8">{{ config('hotel.address.street') }}<br>{{ config('hotel.address.locality') }}, {{ config('hotel.address.region') }} {{ config('hotel.address.postal_code') }}</p>
-          <p style="margin-top:10px;font-size:14px;line-height:1.8">Tel. 01 (492) 925-03-10 al 13<br>Lada sin costo: 01 800 215 2604</p>
+          <p style="margin-top:10px;font-size:14px;line-height:1.8">Tel. 01 (492) 925-03-10 al 13<br>Lada sin costo: 01 800 215 2604<br><a href="mailto:{{ config('hotel.email') }}" style="color:rgba(255,255,255,.7)">{{ config('hotel.email') }}</a></p>
         </div>
         <div>
           <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--c-gold-light);font-weight:600">Síguenos</span>
