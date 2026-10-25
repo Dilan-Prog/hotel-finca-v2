@@ -16,6 +16,9 @@ return [
 
     'phone_secondary_e164' => '+524922288777',
 
+    'phone_tollfree_display' => '01 800 215 2604',
+    'phone_tollfree_tel' => '018002152604',
+
     'whatsapp_e164' => '+524922232151',
     'whatsapp_url' => 'https://wa.me/524922232151',
 

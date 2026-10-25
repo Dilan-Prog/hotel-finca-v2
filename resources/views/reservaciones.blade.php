@@ -80,7 +80,7 @@
   <!-- ===== PRE-FOOTER CTA ===== -->
   <section style="background:var(--c-ink);color:#fff;text-align:center;padding:clamp(44px,8vw,70px) 16px">
     <h2 style="font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,48px);font-weight:700">¿Listo para hospedarte?</h2>
-    <p style="margin-top:12px;font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,.7);font-weight:300">¿Dudas antes de reservar? Llámanos sin costo al 01 800 215 2604.</p>
+    <p style="margin-top:12px;font-size:clamp(14px,2vw,17px);color:rgba(255,255,255,.7);font-weight:300">¿Dudas antes de reservar? Llámanos sin costo al <a href="tel:{{ config('hotel.phone_tollfree_tel') }}" style="color:inherit;border-bottom:1px solid currentColor">01 800 215 2604</a>.</p>
     <a class="btn-gold" href="{{ route('contacto') }}" style="display:inline-block;margin-top:22px;padding:15px 36px;font-size:16px;font-weight:600;border-radius:3px">Contáctanos</a>
   </section>
 

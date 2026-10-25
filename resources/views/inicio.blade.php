@@ -15,7 +15,7 @@
             'name' => '¿Cuánto cuesta un hotel en Zacatecas centro?',
             'acceptedAnswer' => [
                 '@type' => 'Answer',
-                'text' => 'En Hotel La Finca del Minero, en pleno Centro Histórico de Zacatecas, las habitaciones van desde 890 MXN por noche reservando directo, hasta 1,650 MXN por la Suite Colonial.',
+                'text' => 'En Hotel La Finca del Minero, en pleno Centro Histórico de Zacatecas, las habitaciones van desde 890 MXN por noche reservando directo, hasta 1,090 MXN por la Jr. Suite Ejecutiva.',
             ],
         ],
         [
@@ -344,7 +344,7 @@
     <div style="display:flex;flex-direction:column;gap:14px">
       <div style="background:#fff;border:1px solid rgba(var(--c-ink-rgb),.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(var(--c-ink-rgb),.05)">
         <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Cuánto cuesta un hotel en Zacatecas centro?</h3>
-        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">En Hotel La Finca del Minero, en pleno Centro Histórico de Zacatecas, las habitaciones van desde 890 MXN por noche reservando directo, hasta 1,650 MXN por la Suite Colonial.</p>
+        <p style="margin-top:6px;font-size:14px;color:#6b5d4f;line-height:1.6">En Hotel La Finca del Minero, en pleno Centro Histórico de Zacatecas, las habitaciones van desde 890 MXN por noche reservando directo, hasta 1,090 MXN por la Jr. Suite Ejecutiva.</p>
       </div>
       <div style="background:#fff;border:1px solid rgba(var(--c-ink-rgb),.06);border-radius:6px;padding:20px;box-shadow:0 4px 16px rgba(var(--c-ink-rgb),.05)">
         <h3 style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600">¿Los hoteles en Zacatecas incluyen desayuno?</h3>

@@ -1,0 +1,23 @@
+---
+# Despliegue por cPanel > Git Version Control > "Deploy HEAD Commit".
+# Se ejecuta al desplegar el repositorio clonado en el servidor.
+#
+# ANTES DEL PRIMER DEPLOY revisa DEPLOYPATH (carpeta donde vive el sitio).
+# El proyecto completo va dentro de esa carpeta; el .htaccess de la raíz
+# redirige todo a /public. Ruta del ambiente de pruebas actual:
+#   /home/u835332080/domains/wheat-elk-980423.hostingersite.com/public_html
+#
+# NO se sube ni se sobrescribe: .env, storage/logs, vendor/ (se instala aquí).
+# public/build (CSS/JS compilado con Vite) SÍ viene en el repo.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u835332080/domains/wheat-elk-980423.hostingersite.com/public_html
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -Rf app bootstrap config database public resources routes storage $DEPLOYPATH/
+    - /bin/cp -f artisan composer.json composer.lock .htaccess $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/storage/framework/cache $DEPLOYPATH/storage/framework/sessions $DEPLOYPATH/storage/framework/views $DEPLOYPATH/storage/logs $DEPLOYPATH/bootstrap/cache
+    - /bin/chmod -R ug+rwX $DEPLOYPATH/storage $DEPLOYPATH/bootstrap/cache
+    # Dependencias de PHP (sin paquetes de desarrollo). Ajusta la ruta de composer si es distinta.
+    - cd $DEPLOYPATH && (composer install --no-dev --optimize-autoloader --no-interaction || /usr/local/bin/composer install --no-dev --optimize-autoloader --no-interaction || true)
+    # Limpia cachés para que tome los cambios (el .env del servidor se conserva).
+    - cd $DEPLOYPATH && (php artisan config:clear && php artisan view:clear && php artisan route:clear || true)

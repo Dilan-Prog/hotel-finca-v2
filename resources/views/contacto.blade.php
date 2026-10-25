@@ -35,7 +35,7 @@
           <div style="font-family:'Playfair Display',serif;font-size:clamp(16px,3.5vw,23px);font-weight:600;margin-top:2px">01 (492) 925-03-10 al 13</div>
         </div>
       </a>
-      <a href="{{ route('reservaciones') }}" style="display:flex;align-items:center;gap:14px;background:#fff;border:1px solid rgba(var(--c-gold-rgb),.4);border-radius:6px;padding:20px 22px;box-shadow:0 8px 24px rgba(var(--c-ink-rgb),.07)">
+      <a href="tel:{{ config('hotel.phone_e164') }}" style="display:flex;align-items:center;gap:14px;background:#fff;border:1px solid rgba(var(--c-gold-rgb),.4);border-radius:6px;padding:20px 22px;box-shadow:0 8px 24px rgba(var(--c-ink-rgb),.07)">
         <span style="font-size:24px;color:var(--c-gold)">✆</span>
         <div>
           <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#746553;font-weight:600">Lada sin costo</div>
@@ -96,3 +96,4 @@
   </section>
 
 @endsection
+<a href="tel:{{ config('hotel.phone_tollfree_tel') }}"
