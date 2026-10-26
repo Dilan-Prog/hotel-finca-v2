@@ -2,16 +2,15 @@
 # Despliegue por cPanel > Git Version Control > "Deploy HEAD Commit".
 # Se ejecuta al desplegar el repositorio clonado en el servidor.
 #
-# ANTES DEL PRIMER DEPLOY revisa DEPLOYPATH (carpeta donde vive el sitio).
-# El proyecto completo va dentro de esa carpeta; el .htaccess de la raíz
-# redirige todo a /public. Ruta del ambiente de pruebas actual:
-#   /home/u835332080/domains/wheat-elk-980423.hostingersite.com/public_html
+# DEPLOYPATH usa $HOME, así que no depende del nombre de usuario de cPanel.
+# El proyecto completo va dentro de public_html; el .htaccess de la raíz
+# redirige todo a /public.
 #
 # NO se sube ni se sobrescribe: .env, storage/logs, vendor/ (se instala aquí).
 # public/build (CSS/JS compilado con Vite) SÍ viene en el repo.
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u835332080/domains/wheat-elk-980423.hostingersite.com/public_html
+    - export DEPLOYPATH=$HOME/public_html
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -Rf app bootstrap config database public resources routes storage $DEPLOYPATH/
     - /bin/cp -f artisan composer.json composer.lock .htaccess $DEPLOYPATH/
